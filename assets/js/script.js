@@ -127,7 +127,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     pages[i].classList.add("active");
                     navigationLinks[i].classList.add("active");
                     window.scrollTo(0, 0);
-                    window.location.hash = pages[i].dataset.page;
+
+                    if (pages[i].dataset.page !== "about") {
+                        window.location.hash = pages[i].dataset.page;
+                    }
+                    else {
+                        window.location.hash = "";
+                        history.replaceState(null, null, ' ')
+                    }
+
                     updatePageTitle(this.innerHTML);
                 } else {
                     pages[i].classList.remove("active");

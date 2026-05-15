@@ -945,7 +945,7 @@ main {
 }
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #WORK
 \*-----------------------------------*/
 
 .filter-list {
@@ -1362,7 +1362,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     /**
-     * #PORTFOLIO, BLOG
+     * #WORK, BLOG
      */
 
     .project-img,
@@ -1640,7 +1640,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     /**
-     * #PORTFOLIO, BLOG
+     * #WORK, BLOG
      */
 
     .project-img,
@@ -1739,7 +1739,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     /**
-     * PORTFOLIO
+     * WORK
      */
 
     .article-title {
@@ -1773,7 +1773,7 @@ textarea.form-input::-webkit-resizer {
         color: var(--orange-yellow-crayola);
     }
 
-    /* portfolio and blog grid */
+    /* work and blog grid */
 
     .project-list,
     .blog-posts-list {
@@ -1886,7 +1886,7 @@ textarea.form-input::-webkit-resizer {
     }
 
     /**
-     * PORTFOLIO
+     * WORK
      */
 
     .project-list {

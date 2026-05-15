@@ -1,5 +1,13 @@
 'use strict';
 
+particlesJS.load(
+  'particles-js',
+  './assets/json/particles.json',
+  function () {
+    console.log('loaded');
+  }
+);
+
 document.addEventListener("DOMContentLoaded", () => {
     const updatePageTitle = (pageName) => {
         document.title = `${pageName} • Biraru`;

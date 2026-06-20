@@ -659,6 +659,10 @@ main {
 }
 
 .testimonials-item-title {
+    a {
+        display: inline;
+    }
+
     margin-bottom: 7px;
 }
 

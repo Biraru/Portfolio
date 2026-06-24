@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalTitle = document.querySelector("[data-modal-title]");
     const modalTime  = document.querySelector("[data-modal-time]");
     const modalText = document.querySelector("[data-modal-text]");
+    const modalLink = document.querySelector("[data-modal-link]")
 
     // modal toggle function
     const testimonialsModalFunc = function () {
@@ -50,6 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
             modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
             modalTime.innerHTML = this.dataset.timeText || "14 June, 2021";
             modalTime.setAttribute("datetime", this.dataset.time || "2021-06-14");
+
+            const name = this.querySelector("[data-testimonials-name]").textContent.trim();
+            modalLink.href =
+            window.location.origin +
+            "/assets/testimonials/" +
+            encodeURIComponent(name) +
+            ".png";
 
             testimonialsModalFunc();
         });

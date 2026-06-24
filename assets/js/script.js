@@ -52,12 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
             modalTime.innerHTML = this.dataset.timeText || "14 June, 2021";
             modalTime.setAttribute("datetime", this.dataset.time || "2021-06-14");
 
-            const name = this.querySelector("[data-testimonials-name]").textContent.trim();
-            modalLink.href =
-            window.location.origin +
-            "/assets/testimonials/" +
-            encodeURIComponent(name) +
-            ".png";
+            const imgName = this.dataset.ssName
+            if (imgName) {
+                modalLink.href = `/assets/testimonials/${encodeURIComponent(imgName)}`;
+                modalLink.style.display = "";
+            } else {
+                modalLink.style.display = "none";
+            }
 
             testimonialsModalFunc();
         });
